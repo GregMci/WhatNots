@@ -72,7 +72,7 @@ Amongst other considerations, the merge requires:
 +	Aggregating votes for parties other than Republican and Democrat.
 
 
-<img width="600" src="man/figures/US_election.png" />
+<img width="600" src="man/figures/US_elections.png" />
 <img width="500" src="man/figures/climate_stripes.png" />
 
 
