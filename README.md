@@ -73,7 +73,6 @@ Amongst other considerations, the merge requires:
 
 
 <img width="600" src="man/figures/US_elections.png" />
-<img width="500" src="man/figures/climate_stripes.png" />
 
 
 
@@ -87,7 +86,7 @@ The 'qrcode' R package (https://cran.r-project.org/web/packages/qrcode/index.htm
 This format allows a QR code to be plotted into a visualisation produced in R, or exported on its own.  
 
 
-<img "width=234" src="man/figures/qr.png" />
+<img width="234" src="man/figures/qr.png" />
 
 
 
