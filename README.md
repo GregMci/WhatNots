@@ -44,6 +44,9 @@ After renaming the columns, this data file is itself renamed, and outputted by t
 The function executes these steps and so is easier to de-bug and modify, and easier to run in batch mode. 
 
 
+
+<img width="250" align="right" src="https://github.com/GregMci/WhatNots/blob/master/man/figures/climate_stripes.png" />
+
 ## 2. US election voting data as shape files (1976 to 2020)
 
 The output shape files – `elect_states.shp` - has:
@@ -65,6 +68,7 @@ Amongst other considerations, the merge requires:
 +	Removing voting and spatial data that does not relate to states (e.g. overseas territories, below state voting data)
 +	Aggregating votes for parties other than Republican and Democrat.
 
+<img width="250" align="right" src="https://github.com/GregMci/WhatNots/blob/master/man/figures/US_election.png" />
 
 ## * 3. QR code plotting and formatting 
 
@@ -74,6 +78,8 @@ The 'qrcode' R package (https://cran.r-project.org/web/packages/qrcode/index.htm
 3. `qr_test_redundnacy_swatch` - produce a test swatch to evaluate the redundant usable area that may be over-plotted.
 
 This format allows a QR code to be plotted into a visualisation produced in R, or exported on its own.  
+
+<img width="250" align="right" src="https://github.com/GregMci/WhatNots/blob/master/man/figures/qr.png" />
 
 
 ## * 4. More
