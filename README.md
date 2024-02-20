@@ -68,7 +68,7 @@ Amongst other considerations, the merge requires:
 
 ## * 3. QR code plotting and formatting 
 
-The 'qrcode' R package (REF) produces a matrix describing a qr code for a given url. Based on the output of 'library(qrcode)' these functions:
+The 'qrcode' R package (https://cran.r-project.org/web/packages/qrcode/index.html) produces a matrix describing a qr code for a given url. Based on the output of 'library(qrcode)' these functions:
 1. convert the matrix into a data frame format
 2. plot the qr code from the data frame with a rounded rectangle which can produce rectangles, circles, or rounded rectangles (the shape type is defined for the whole qr code or individually defined for individual guides and the main content).
 3. produce a test swatch to evaluate the redundant usable area that may be over-plotted.
