@@ -48,10 +48,10 @@ The function executes these steps and so is easier to de-bug and modify, and eas
 
 The output shape files – `elect_states.shp` - has:
 
-* each row is a state
-*	columns  include
-..+ fips code (unique numerical identifier for each state)
-..+ state name 
+a. each row is a state
+b.	columns  include
++ fips code (unique numerical identifier for each state)
++ state name 
 + two letter, abbreviated state name 
 + votes (absolute number and proportion) for every fourth year from 1976 to 2020,
 + by dominant parties (Republican & Democrat) or “Other”
