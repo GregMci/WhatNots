@@ -8,7 +8,7 @@ It might be of use in your own teaching, research or learning. The scripts and f
 In some cases the visualisations given below are illustrative of what can be produced using the data, rather than necessarily being produced by those functions. Students have used this data for visualisation projects in our modules. 
 
 
-##  1. get_berkley_earth_climate_data - a function to query temperature data from https://berkeleyearth.org/ & https://berkeleyearth.org/data/
+##  1. query temperature data from https://berkeleyearth.org/ 
 
 Many climate visualisations use data from https://berkeleyearth.org. This generic function returns climate data for a 'focalCountry'. The script formats the data in a simple, usable style. 
 
