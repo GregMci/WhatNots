@@ -47,7 +47,7 @@ After renaming the columns, this data file is itself renamed, and outputted by t
 The `get_berkley_earth_climate_data` function executes these steps and so is easier to de-bug and modify, and easier to run in batch mode. 
 
 
-<img width="500" src="man/figures/climate_stripes.png" />
+<img width="600" src="man/figures/climate_stripes.png" />
 
 
 ## 2. US election voting data as shape files (1976 to 2020)
