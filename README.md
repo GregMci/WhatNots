@@ -82,7 +82,7 @@ The 'qrcode' R package (https://cran.r-project.org/web/packages/qrcode/index.htm
 This format allows a QR code to be plotted into a visualisation produced in R, or exported on its own.  
 
 
-<img "width=250" align="left" src="https://github.com/GregMci/WhatNots/tree/main/man/figures/qr.png" />
+<img "width=250" align="left" src="https://github.com/GregMci/WhatNots/blob/master/man/figures/qr.png" />
 
 
 
