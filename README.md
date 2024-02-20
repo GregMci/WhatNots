@@ -77,9 +77,6 @@ Amongst other considerations, the merge requires:
 
 
 
-
-
-
 ## 3. QR code plotting and formatting 
 
 The 'qrcode' R package (https://cran.r-project.org/web/packages/qrcode/index.html) produces a matrix describing a qr code for a given url. Based on the output of 'library(qrcode)' these functions:
@@ -90,7 +87,7 @@ The 'qrcode' R package (https://cran.r-project.org/web/packages/qrcode/index.htm
 This format allows a QR code to be plotted into a visualisation produced in R, or exported on its own.  
 
 
-<img "width=234" src="man/figures/qr.png"" />
+<img "width=234" src="man/figures/qr.png" />
 
 
 
