@@ -1,6 +1,8 @@
 
 # WhatNots - data and tools from the MASC Data Visulisation, CIM, Warwick 
 
+<img width="250" align="right" src="https://github.com/GregMci/baselines/blob/master/man/figures/hexLogo.png" />
+
 Whatnots shares some, but not all, R code and data files used in our MASC Data Visualisation teaching (https://warwick.ac.uk/fac/cross_fac/cim/apply-to-study/masters-programmes/visualisation/). 
 
 It might be of use in your own teaching, research or learning. The scripts and files are shared ‘as is’ with no liability and, importantly, without sharing the context of how we use them in teaching. Please get in touch if you find any bugs.
