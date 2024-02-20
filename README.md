@@ -10,24 +10,26 @@ In some cases the visualisations given below are illustrative of what can be pro
 
 ##  1. query temperature data from https://berkeleyearth.org/ 
 
-Many climate visualisations use data from https://berkeleyearth.org. This generic function returns climate data for a 'focalCountry'. The script formats the data in a simple, usable style. 
+Many climate visualisations use data from https://berkeleyearth.org. This generic function returns climate data for a `focalCountry`. The script formats the data in a simple, usable style. 
 
-The country name/format follows that of BerkleyEarth such that this will work:
+The country name/format follows that of BerkleyEarth.org such that this will work:
 
-'get_berkley_earth_climate_data( "Cook Islands" )'
+`get_berkley_earth_climate_data( "Cook Islands" )`
 
 But this will return an error:
 
-'get_berkley_earth_climate_data( "Cook-Islands" )'
+`get_berkley_earth_climate_data( "Cook-Islands" )`
 
-As a brief explanation, the function concatenates the URL from a country name, reading that data from line 51 (using 'skip') as follows:
+As a brief explanation, the function concatenates the URL from a country name, reading that data from line 51 (using `skip`) as follows:
 
-  'focalCountry <- "Kenya"
-  'dataUrl <- paste("https://berkeleyearth.org/wp-content/themes/client-theme/temperature-data/",
+```
+  focalCountry <- "Kenya"
+  dataUrl <- paste("https://berkeleyearth.org/wp-content/themes/client-theme/temperature-data/",
                      focalCountry,
                      "-projection.txt", sep="")
     thisData <- read.table( dataUrl, skip=51 )'
-  'names( thisData ) <- c("Year", "AnnualAverage", "AnnualAverageUncertainty",           "10YearSmooth", "SSP1-2.6", "SSP2-4.5", "SSP3-7.0", "ModelHistorical") '
+  names( thisData ) <- c("Year", "AnnualAverage", "AnnualAverageUncertainty",           "10YearSmooth", "SSP1-2.6", "SSP2-4.5", "SSP3-7.0", "ModelHistorical") 
+```
 
 
 After renaming the columns, this data file is itself renamed, and outputted by the function.
