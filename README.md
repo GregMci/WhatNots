@@ -44,19 +44,10 @@ After renaming the columns, this data file is itself renamed, and outputted by t
     assign( countryDataName, thisData  )
 ```
 
-The function executes these steps and so is easier to de-bug and modify, and easier to run in batch mode. 
+The `get_berkley_earth_climate_data` function executes these steps and so is easier to de-bug and modify, and easier to run in batch mode. 
 
 
 <img width="500" src="man/figures/climate_stripes.png" />
-
-
-
-
-
-
-
-
-
 
 
 ## 2. US election voting data as shape files (1976 to 2020)
@@ -81,7 +72,9 @@ Amongst other considerations, the merge requires:
 +	Aggregating votes for parties other than Republican and Democrat.
 
 
-<img width="500" src="man/figures/US_election.png" />
+<img width="600" src="man/figures/US_election.png" />
+<img width="500" src="man/figures/climate_stripes.png" />
+
 
 
 
@@ -97,7 +90,7 @@ The 'qrcode' R package (https://cran.r-project.org/web/packages/qrcode/index.htm
 This format allows a QR code to be plotted into a visualisation produced in R, or exported on its own.  
 
 
-<img "width=250" src="man/figures/qr.png"" />
+<img "width=234" src="man/figures/qr.png"" />
 
 
 
