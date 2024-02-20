@@ -50,6 +50,12 @@ The function executes these steps and so is easier to de-bug and modify, and eas
 <img width="500" align="left" src="man/figures/climate_stripes.png" />
 
 
+
+
+
+
+
+
 ## 2. US election voting data as shape files (1976 to 2020)
 
 The output shape files – `elect_states.shp` - has:
@@ -73,6 +79,9 @@ Amongst other considerations, the merge requires:
 
 
 <img width="500" align="left" src="man/figures/US_election.png" />
+
+
+
 
 
 ## * 3. QR code plotting and formatting 
