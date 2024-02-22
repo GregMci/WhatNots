@@ -8,11 +8,7 @@ Whatnots shares some, but not all, R code and data files used in our MASC Data V
 
 It might be of use in your own teaching, research or learning. The scripts and files are shared ‘as is’ with no liability and, importantly, without sharing the context of how we use them in teaching. Please get in touch if you find any bugs.
 
-In some cases the visualisations given below are illustrative of what can be produced using the data, rather than necessarily being produced by those functions. Students have used this data for visualisation projects in our modules. 
-
-
-
-
+In some cases the visualisations given below are illustrative of what can be produced using the data, rather than necessarily being produced by those functions. Students have used this data for visualisation projects in our modules.  <br> 
 
 
 ##  1. query temperature data from https://berkeleyearth.org/ 
