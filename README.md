@@ -8,7 +8,8 @@ Whatnots shares some, but not all, R code and data files used in our MASC Data V
 
 It might be of use in your own teaching, research or learning. The scripts and files are shared ‘as is’ with no liability and, importantly, without sharing the context of how we use them in teaching. Please get in touch if you find any bugs.
 
-In some cases the visualisations given below are illustrative of what can be produced using the data, rather than necessarily being produced by those functions. Students have used this data for visualisation projects in our modules.  <br> 
+In some cases the visualisations given below are illustrative of what can be produced using the data, rather than necessarily being produced by those functions. Students have used this data for visualisation projects in our modules.
+
   <br>
   <br>  
 
@@ -47,10 +48,10 @@ After renaming the columns, this data file is itself renamed, and outputted by t
 
 The `get_berkley_earth_climate_data` function executes these steps and so is easier to de-bug and modify, and easier to run in batch mode. 
 
-
+  <br> 
+  
 <img width="600" src="man/figures/climate_stripes.png" />
 
-  <br> 
   <br>
   <br>
   
@@ -75,10 +76,10 @@ Amongst other considerations, the merge requires:
 +	Removing voting and spatial data that does not relate to states (e.g. overseas territories, below state voting data)
 +	Aggregating votes for parties other than Republican and Democrat.
 
-
+  <br> 
+  
 <img width="600" src="man/figures/US_elections.png" />
 
-  <br> 
   <br>
   <br>
 
@@ -91,12 +92,13 @@ The 'qrcode' R package (https://cran.r-project.org/web/packages/qrcode/index.htm
 
 This format allows a QR code to be plotted into a visualisation produced in R, or exported on its own.  
 
-
+  <br>
+  
 <img width="600" src="man/figures/qr.png" />
 
   <br> 
   <br>
-  <br>
+
 
 ## 4. More
 
