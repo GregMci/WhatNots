@@ -10,6 +10,7 @@ It might be of use in your own teaching, research or learning. The scripts and f
 
 In some cases the visualisations given below are illustrative of what can be produced using the data, rather than necessarily being produced by those functions. Students have used this data for visualisation projects in our modules.  <br> 
   <br>
+  <br>  
 
 ##  1. query temperature data from https://berkeleyearth.org/ 
 
@@ -49,7 +50,10 @@ The `get_berkley_earth_climate_data` function executes these steps and so is eas
 
 <img width="600" src="man/figures/climate_stripes.png" />
 
-
+  <br> 
+  <br>
+  <br>
+  
 ## 2. US election voting data as shape files (1976 to 2020)
 
 The output shape files – `elect_states.shp` - has:
@@ -74,7 +78,9 @@ Amongst other considerations, the merge requires:
 
 <img width="600" src="man/figures/US_elections.png" />
 
-
+  <br> 
+  <br>
+  <br>
 
 ## 3. QR code plotting and formatting 
 
@@ -88,7 +94,9 @@ This format allows a QR code to be plotted into a visualisation produced in R, o
 
 <img width="600" src="man/figures/qr.png" />
 
-
+  <br> 
+  <br>
+  <br>
 
 ## 4. More
 
