@@ -11,7 +11,7 @@ It might be of use in your own teaching, research or learning. The scripts and f
 In some cases the visualisations given below are illustrative of what can be produced using the data, rather than necessarily being produced by those functions. Students have used this data for visualisation projects in our modules.
 
   <br>
-  <br>  
+
 
 ##  1. query temperature data from https://berkeleyearth.org/ 
 
