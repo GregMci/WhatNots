@@ -38,8 +38,10 @@ qr_plot <- function( qr_df = NULL, rounding = 0, col = "black", bg="white" ){
 
     buff <- 0
 
-    plot_blank( x = buff:( max(qr_df$x)+buff ), y=buff:( max(qr_df$y) + buff),
-                ylim=c( max(qr_df$y) +buff , buff ), asp=1 )
+    plot_blank( x = 1:max(qr_df$x), y= 1:max(qr_df$y),
+                xlim=c( 1, max(qr_df$x)+1 ), 
+                ylim=c( max(qr_df$y)+1 , 1 ),
+                asp=1 )
 
     plot_background( col = bg )
 
