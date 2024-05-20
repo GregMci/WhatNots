@@ -17,11 +17,16 @@ qr_matrix_2_dataframe <- function( qr_data = NULL ){
 
     # blank out position guide squares
     qr_data[ 4:10, 4:10 ] <- "BLANK"
-    qr_data[ 34:40, 4:10 ] <- "BLANK"
-    qr_data[ 4:10, 34:40 ] <- "BLANK"
+    
+    rightPos1 <- dim( qr_data )[2] - 10
+    rightPos2 <- dim( qr_data )[2] - 3
+    
+    
+    qr_data[ rightPos1:rightPos2, 4:10 ] <- "BLANK"
+    qr_data[ 4:10, rightPos1:rightPos2 ] <- "BLANK"
 
     # blank out alignment guide squares
-    qr_data[ 32:36, 32:36 ] <- "BLANK"
+    qr_data[ (rightPos1-1):(rightPos1+2), (rightPos1-1):(rightPos1+2) ] <- "BLANK"
 
     # create object of entries by row for all  cells
     xyVals <- expand.grid( 1:dim( qr_data )[1], 1:dim( qr_data )[2] )
@@ -47,7 +52,8 @@ qr_matrix_2_dataframe <- function( qr_data = NULL ){
     }
 
     qr_dataFrame <- as.data.frame( cbind( xyVals, zVals ) )
-    names( qr_dataFrame) <- c( "x", "y", "z" )
+    names( qr_dataFrame) <- c( "y", "x", "z" )
+    qr_dataFrame <- qr_dataFrame[ , c( 2, 1, 3) ] 
 
     return( qr_dataFrame )
 

@@ -43,7 +43,7 @@ qr_plot <- function( qr_df = NULL, rounding = 0, col = "black", bg="white" ){
 
     plot_background( col = bg )
 
-    # plot all cells except guide
+    # plot all cells except guides
     for( j in which( qr_df$z == 1 ) ){
       polygon( rect_rounded( qr_df$x[ j ], qr_df$y[ j ],
                              1+qr_df$x[ j ], 1+qr_df$y[ j ],
@@ -51,32 +51,32 @@ qr_plot <- function( qr_df = NULL, rounding = 0, col = "black", bg="white" ){
                col=col, border=NA  )
     }
 
-    # add position guides
+    # add position guides as 3 overlaying shapes ( black, white, black )
+    guideStart <- max( qr_df ) - 6
     for( i in seq(3.5, 1.5, by = -1) ){
+      
+      # top left
       polygon( 7.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[2] )$x,
                7.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[2] )$y,
                col=c( col, bg, col )[i-0.5], border=F  )
-    }
 
-    for( i in seq(3.5, 1.5, by = -1) ){
-      polygon( 37.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[3] )$x,
+      # bottom left
+      polygon( guideStart+0.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[3] )$x,
                7.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[3] )$y,
                col=c( col, bg, col )[i-0.5], border=F  )
-    }
 
-
-    for( i in seq(3.5, 1.5, by = -1) ){
+      # top right
       polygon( 7.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[4] )$x,
-               37.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[4] )$y,
+               guideStart+0.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[4] )$y,
                col=c( col, bg, col )[i-0.5], border=F  )
     }
 
 
     # add alignment guides as circles
-
+    guideStart <- max( qr_df ) - 8
     for( i in seq( 2.5, 0.5, by = -1 ) ){
-      polygon( 34.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[5] )$x,
-               34.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[5] )$y,
+      polygon( guideStart-0.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[5] )$x,
+               guideStart-0.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[5] )$y,
                col=c( col, bg, col )[i+0.5], border=F  )
     }
 
