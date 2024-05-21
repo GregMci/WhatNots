@@ -33,7 +33,7 @@ qr_plot <- function( qr_df = NULL, rounding = 0, col = "black", bg="white" ){
       this_rounding <- rep( rounding, 5 )
     } else {
       this_rounding <- rep( rounding[1], 5 )
-      warning( "rounding expects 1 or 4 values, 1st value repeated " )
+      warning( "rounding expects 1 or 5 values, 1st value repeated " )
     }
 
     buff <- 0
@@ -80,6 +80,7 @@ qr_plot <- function( qr_df = NULL, rounding = 0, col = "black", bg="white" ){
       polygon( guideStart-0.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[5] )$x,
                guideStart-0.5 + i*rect_rounded( n_points = 360, rounding = this_rounding[5] )$y,
                col=c( col, bg, col )[i+0.5], border=F  )
+               
     }
 
 }
