@@ -43,7 +43,7 @@ qr_plot <- function( qr_df = NULL, rounding = 0, col = "black", bg="white" ){
                 ylim=c( max(qr_df$y)+1 , 1 ),
                 asp=1 )
 
-    plot_background( col = bg )
+    # plot_background( col = bg )
 
     # plot all cells except guides
     for( j in which( qr_df$z == 1 ) ){
