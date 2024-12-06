@@ -25,7 +25,7 @@ qr_plot <- function( qr_df = NULL, rounding = 0, col = "black", bg="white" ){
     #if( is.null( qr_df) == T ) qr_df <- qr_matrix_2_dataframe()
     if( is.null( qr_df) == T ) {
           qr_df <- WhatNots::MASCcodeDF
-    }else if( is.matrix(dr_df) ==T ){ 
+    }else if( is.matrix(qr_df) ==T ){ 
           qr_df <- qr_matrix_2_dataframe( qr_df )
           message(" qr_df is QR matrix, converted to data frame")
     }else if( is.data.frame( qr_df ) == F ){ 
@@ -49,7 +49,7 @@ qr_plot <- function( qr_df = NULL, rounding = 0, col = "black", bg="white" ){
                 ylim=c( max(qr_df$y)+1 , 1 ),
                 asp=1 )
 
-    # plot_background( col = bg )
+    plot_background( col = bg )
 
     # plot all cells except guides
     for( j in which( qr_df$z == 1 ) ){
