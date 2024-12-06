@@ -20,13 +20,18 @@
 #' qr_plot( qr_df, rounding = 1 )
 #' qr_plot( qr_df, rounding = seq( 1, 0, l=5) )
 
-qr_plot <- function( qr_df = NULL, mat_2_df =T, rounding = 0, col = "black", bg="white" ){
+qr_plot <- function( qr_df = NULL, rounding = 0, col = "black", bg="white" ){
 
     #if( is.null( qr_df) == T ) qr_df <- qr_matrix_2_dataframe()
-    if( is.null( qr_df) == T ) qr_df <- WhatNots::CIM
-  
-    if( is.data.frame( qr_df ) == F) stop("use qr_matrix_2_dataframe() to convert qrcode matrix to data frame")
-
+    if( is.null( qr_df) == T ) {
+          qr_df <- WhatNots::MASCcodeDF
+    }else if( is.matrix(dr_df) ==T ){ 
+          qr_df <- qr_matrix_2_dataframe( qr_df )
+          message(" qr_df is QR matrix, converted to data frame")
+    }else if( is.data.frame( qr_df ) == F ){ 
+          stop("use qr_matrix_2_dataframe() to convert qrcode matrix to data frame")
+    }
+    
     # check rounding is 1 value or a list of five ( main and 4 guides NW, NE, SW, SE )
     if( length( rounding ) == 5 ){
       this_rounding <- rounding
